@@ -4,10 +4,17 @@
 
 @import "media";
 
+@import "blocks/header";
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $primary-font-size;
 }
 
 a {
