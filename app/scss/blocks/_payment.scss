@@ -1,0 +1,29 @@
+.payment__inner-title {
+  font-size: 36px;
+  color: #231f20;
+  text-align: center;
+  margin-top: 51px;
+  margin-bottom: 18px;
+}
+
+.payment__inner-content {
+  max-width: 615px;
+  margin: 0 auto;
+  text-align: center;
+  a {
+    font-size: 18px;
+    line-height: 33px;
+    color: #0777ba;
+    border-bottom: 1px dotted #0777ba;
+  }
+
+  li:not(:nth-of-type(3)) {
+    margin-right: 28px;
+  }
+
+  span {
+    font-size: 18px;
+    color: #000000;
+  }
+}
+
