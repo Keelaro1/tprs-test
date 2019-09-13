@@ -1,0 +1,37 @@
+.taxes {
+  margin-top: 76px;
+  border-bottom: 1px solid #cedae4;
+  padding-bottom: 73px;
+}
+
+.taxes__inner {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 0;
+  }
+}
+
+.taxes__content-title {
+  font-size: 24px;
+  color: #231f20;
+  margin-bottom: 28px;
+}
+
+.taxes__content-text {
+  p:nth-child(1) {
+    max-width: 513px;
+  }
+  color: #231f20;
+  line-height: 21px;
+  max-width: 575px;
+  span {
+    line-height: 15px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #d30531;
+    text-transform: uppercase;
+    margin: 37px 0px 9px 0px;
+  }
+}
