@@ -1,0 +1,37 @@
+.registry {
+  margin-top: 75px;
+  border-bottom: 1px solid #cedae4;
+  padding-bottom: 70px;
+}
+
+.registry__inner {
+  display: flex;
+}
+
+.registry__content {
+  margin-left: 48px;
+}
+
+.registry__content-title {
+  font-size: 24px;
+  color: #231f20;
+}
+
+.registry__content-text {
+  padding-top: 26px;
+  color: #231f20;
+  line-height: 21px;
+  p {
+    margin: 0;
+  }
+  span {
+    display: inline-block;
+    padding-top: 37px;
+    padding-bottom: 7px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #d30531;
+    text-transform: uppercase;
+  }
+}
