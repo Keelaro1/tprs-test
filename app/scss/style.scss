@@ -20,9 +20,17 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+
 body {
   font-family: $primary-font;
   font-size: $primary-font-size;
+  overflow: auto;
+  height: 100%;
 }
 
 a {

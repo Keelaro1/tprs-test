@@ -6,15 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TPRS-TEST</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header__inner">
-      <div class="header__btn"><a href="#">Войти</a></div>
+      <div class="header__btn">
+        <a data-fancybox data-src="#header__modal" href="javascript:;">Войти</a>
+      </div>
       <div class="header__logo"><a href="#"><img src="images/header-logo.svg" alt=""></a></div>
       <div class="header__help">
         <div class="header__help-link"><a href="#">Помощь</a></div>
@@ -24,6 +27,22 @@
             <li> <a href="#">Вопрос-ответ</a> </li>
             <li> <a href="#">Служба поддержки</a></li>
           </ul>
+        </div>
+      </div>
+      <div id="header__modal">
+        <div class="header__modal-text">
+          Введите логин и пароль для входа в Личный кабинет
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Логин" />
+          <input type="text" placeholder="Пароль" />
+          <input type="submit" value="Войти" />
+        </div>
+        <div class="header__modal-password">
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <div class="header__modal-signup">
+          <a href="#"> Регистрация</a>
         </div>
       </div>
     </div>
@@ -221,8 +240,8 @@
     </div>
   </footer>
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
