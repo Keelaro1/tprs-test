@@ -6,7 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__btn {
@@ -17,15 +21,6 @@
     padding: 9px 30px 12px 23px;
     color: #0777ba;
   }
-}
-
-.header__logo {
-  background-image: url(../images/header-logo.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 293px;
-  height: 43px;
-  cursor: pointer;
 }
 
 .header__help:hover {
@@ -49,12 +44,14 @@
   transition: 0.5s ease-in;
   position: absolute;
   right: 20px;
-  margin-top: 20px;
+  margin-top: 17px;
   box-shadow: 0px 0px 5.31px 3.69px rgba(70, 79, 87, 0.1);
   z-index: 50;
 
   li {
     display: block;
+    width: 229px;
+    padding: 12px 0px 10px 16px;
     margin: 10px 4px 10px 5px;
   }
   li:hover {
@@ -62,9 +59,8 @@
     background-color: #e6ecf1;
   }
   a {
-    padding: 12px 0px 10px 16px;
-    width: 229px;
     color: #0777ba;
+    border-bottom: 1px solid #0777ba;
   }
 }
 
@@ -78,5 +74,5 @@
   right: 23px;
   top: -8px;
   transform: rotate(45deg);
-  box-shadow: -7px -7px 8px -3px rgba(70, 79, 87, 0.1);
+  box-shadow: -6px -6px 8px -3px rgba(70, 79, 87, 0.1);
 }

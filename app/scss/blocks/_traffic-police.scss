@@ -1,0 +1,54 @@
+.traffic-police {
+  margin-top: 90px;
+  border-bottom: 1px solid #cedae4;
+  padding-bottom: 55px;
+}
+
+.trafficpolice__penalties {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trafficpolice__penalties-title {
+  font-size: 24px;
+  color: #231f20;
+  padding-bottom: 28px;
+}
+
+.trafficpolice__penalties-text {
+  color: #231f20;
+  max-width: 610px;
+  line-height: 21px;
+  span {
+    display: inline-block;
+    margin: 38px 0px 7px 0px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #d30531;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0;
+  }
+  p:nth-child(2) {
+    margin-top: 12px;
+  }
+}
+
+.trafficpolice__fees {
+  margin-top: 32px;
+}
+
+.trafficpolice__fees-title {
+  font-size: 24px;
+  color: #147ebe;
+  border-bottom: 1px solid #147ebe;
+  display: inline-block;
+}
+
+.trafficpolice__fees-text {
+  max-width: 516px;
+  padding-top: 24px;
+  line-height: 21px;
+}

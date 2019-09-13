@@ -1,0 +1,52 @@
+.debts {
+  margin-top: 75px;
+  border-bottom: 1px solid #cedae4;
+}
+
+.debts__inner {
+  display: flex;
+}
+
+.debts__content {
+  margin-left: 52px;
+}
+
+.debts__content-title {
+  font-size: 24px;
+  color: #231f20;
+  padding-bottom: 12px;
+}
+
+.debts__content-text {
+  color: #231f20;
+  max-width: 574px;
+  line-height: 21px;
+
+  p:nth-child(1) {
+    span {
+      display: block;
+      max-width: 424px;
+      color: #231f20;
+      margin: 0;
+      font-weight: 400;
+      text-transform: none;
+      font-size: 15px;
+    }
+    max-width: 520px;
+  }
+}
+
+.debts__content-text_lower {
+  span {
+    line-height: 15px;
+    display: inline-block;
+    margin-top: 44px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #d30531;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 7px;
+  }
+}
