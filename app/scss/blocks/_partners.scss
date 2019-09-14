@@ -1,5 +1,5 @@
 .partners {
-  margin-top: 70px;
+  margin-top: 75px;
 }
 
 .partners__inner-title {
@@ -14,16 +14,15 @@
   li {
     font-size: 12px;
     font-weight: 700;
-    min-height: 110px;
+    height: 110px;
     width: 155px;
     text-align: center;
   }
-  
+
   div {
     padding-top: 25px;
     display: flex;
     justify-content: center;
-    
   }
   li:not(:last-child) {
     padding-left: 12px;
@@ -32,6 +31,18 @@
   li:nth-child(4) {
     div {
       margin-top: 11px;
+    }
+  }
+
+  /*IE fix*/
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    li:nth-child(4) {
+      div {
+        margin-top: 0px;
+      }
+      img {
+        margin-bottom: 11px;
+      }
     }
   }
 }

@@ -15,9 +15,9 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <button class="header__btn">
-        <a data-fancybox data-src="#header__modal" href="javascript:;">Войти</a>
-      </button>
+      <div class="header__btn">
+        <a data-fancybox data-src="#header__modal" data-toggle="modal" href="javascript:;">Войти</a>
+      </div>
       <div class="header__logo"><a href="#"><img src="images/header-logo.svg" alt=""></a></div>
       <div class="header__help">
         <div class="header__help-link"><a href="#">Помощь</a></div>
@@ -56,7 +56,7 @@
         <div class="search__inner-form">
           <form action="">
             <input type="search" placeholder="Введите данные для поиска">
-            <button type="submit" class="search-btn">Найти</button>
+            <input type="submit" class="search-btn" value = "Найти">
           </form>
         </div>
         <div class="search__inner-subtitle">Чем больше параметров введено, тем полнее результаты поиска</div>
