@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1001px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .search__inner {
     text-align: center;
   }
@@ -11,12 +11,10 @@
     margin-right: 48px;
   }
 
-  .partners__content-list {
+  .partners .partners__content-list {
     text-align: center;
-    ul {
-      width: 70%;
-    }
     li {
+      width: 25%;
       margin-top: 40px;
     }
   }
