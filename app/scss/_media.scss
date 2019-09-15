@@ -1,0 +1,56 @@
+@media (min-width: 768px) and (max-width: 1001px) {
+  .search__inner {
+    text-align: center;
+  }
+  .search__inner-form input[type="search"] {
+    width: 500px;
+  }
+
+  .traffic-police .trafficpolice__penalties-text,
+  .taxes__content-text {
+    margin-right: 48px;
+  }
+
+  .partners__content-list {
+    text-align: center;
+    ul {
+      width: 66%;
+    }
+    li {
+      padding-top: 30px;
+    }
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+
+    .footer__copy,
+    .footer__menu,
+    .footer__contacts,
+    .footer__copy-secondary {
+      width: 50%;
+      text-align: center;
+    }
+
+    .footer__copy {
+      order: 1;
+    }
+
+    .footer__copy-secondary {
+      order: 2;
+    }
+
+    .footer__copy .footer__copy-image {
+      margin-top: 20px;
+    }
+    .footer__copy,
+    .footer__copy-secondary {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 320px) {
+  
+}
+
