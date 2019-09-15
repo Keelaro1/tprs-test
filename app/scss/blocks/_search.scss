@@ -58,3 +58,15 @@
   color: rgba(255, 255, 255, 0.749);
 }
 
+
+.search__magnifier-mobile {
+  display: none;
+}
+
+.search__icon-magnifier:before {
+  font-family: "icomoon";
+  color: #0777ba;
+  content: "\e986";
+  font-size: 24px;
+}
+
