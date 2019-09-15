@@ -70,6 +70,8 @@
   box-shadow: -6px -6px 8px -3px rgba(70, 79, 87, 0.1);
 }
 
+/*Modal*/
+
 #header__modal {
   width: 400px;
   display: none;
@@ -119,4 +121,26 @@
 
 #header__modal.fancybox-content {
   padding: 30px 40px 20px 40px;
+}
+
+/*Mobile*/
+
+.header__btn-menu {
+  display: none;
+  margin-top: -7px;
+}
+
+.header__icon-bars:before {
+  font-family: "icomoon";
+  color: #0777ba;
+  content: "\e9bd";
+  font-size: 24px;
+}
+
+.header__icon-bars-changed:before {
+  content: "\ea0f";
+}
+
+.header__btn-mobile {
+  display: none;
 }
