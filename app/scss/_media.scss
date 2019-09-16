@@ -215,7 +215,7 @@
   .accordion .taxes__content-text-mobile,
   .accordion .registry__content-text-mobile {
     display: none;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 21px;
     color: #231f20;
     span {
@@ -265,10 +265,8 @@
   .partners__inner-title {
     margin-top: -40px;
   }
-  .partners__content-list {
-    padding-left: 0 !important;
-  }
-  .partners__content-list {
+  .partners__content .partners__content-list {
+    padding-left: 0;
     text-align: center;
     ul {
       margin-top: -30px;
@@ -281,5 +279,56 @@
     }
   }
 
-  
+  .footer__menu {
+    display: none;
+  }
+
+  .footer__contacts {
+    display: none;
+  }
+
+  .footer__copy-secondary-image {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 40px !important;
+  }
+
+  .footer .footer__inner {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .footer__inner .footer__copy {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    max-height: 20px;
+    position: relative;
+    img {
+      position: absolute;
+      right: 40%;
+      top: 70px;
+    }
+  }
+
+  .footer__copy-company {
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .footer__copy-secondary {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+
+  .footer__copy-secondary-text {
+    text-align: center;
+  }
 }
