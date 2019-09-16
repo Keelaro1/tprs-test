@@ -258,4 +258,28 @@
   .registry {
     display: none;
   }
+
+  .partners .container {
+    padding: 0;
+  }
+  .partners__inner-title {
+    margin-top: -40px;
+  }
+  .partners__content-list {
+    padding-left: 0 !important;
+  }
+  .partners__content-list {
+    text-align: center;
+    ul {
+      margin-top: -30px;
+      margin-right: 15px;
+    }
+    li {
+      padding: 0 !important;
+      margin-top: 20px;
+      max-width: 150px;
+    }
+  }
+
+  
 }
