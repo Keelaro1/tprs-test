@@ -24,7 +24,7 @@
         <div class="header__btn-menu">
           <span class="header__icon-bars header__icon-bars-changed"></span>
         </div>
-        <div class="header__help-dropdown">
+        <div class="header__help-dropdown desktop-dropdown mobile-dropdown">
           <ul>
             <li> <a href="#">Как это работает</a> </li>
             <li> <a href="#">Вопрос-ответ</a> </li>
@@ -52,7 +52,6 @@
         </div>
       </div>
     </div>
-    </div>
   </header>
 
   <section class="search">
@@ -79,13 +78,18 @@
         <div class="payment__inner-title">
           Здесь можно оплатить
         </div>
+        <div class="payment__inner-title-mobile">
+          Узнайте, как оплатить
+        </div>
 
         <div class="payment__inner-content">
           <ul class="accordion">
             <li>
               <div class="payment__penalties">
                 <img src="images/penalties-mobile-icon.png" alt="">
-                <a class="payment__penalties-mobile toggle" href="javascript:void(0);">Штрафы и пошлины ГИБДД </a>
+                <a class="payment__penalties-desktop" href="#">Штрафы и пошлины ГИБДД</a>
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
+                <a class="payment__penalties-mobile toggle" href="javascript:void(0);">Штрафы ГИБДД</a>
                 <div class="trafficpolice__penalties-text-mobile">
                   <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер
                     штрафа.
@@ -97,12 +101,11 @@
                     штрафов настройте уведомления в Личном кабинете.</p>
                 </div>
               </div>
-
             </li>
-
             <li>
               <div class="payment__fees-mobile">
                 <img src="images/fees-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
                 <a class="payment__fees-mobile-link toggle" href="javascript:void(0);">Пошлины ГИБДД</a>
                 <div class="trafficpolice__fees-text-mobile">
                   <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.
@@ -114,6 +117,7 @@
             <li>
               <div class="payment__debts-mobile">
                 <img src="images/debts-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
                 <a class="payment__debts-mobile toggle" href="javascript:void(0);">Судебные задолженности</a>
                 <div class="debts__content-text-mobile">
                   <p>Для поиска начислений в ГИС ГМП укажите документы:
@@ -127,10 +131,10 @@
                 </div>
               </div>
             </li>
-
             <li>
               <div class="payment__taxes-mobile">
                 <img src="images/taxes-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
                 <a class="payment__taxes-mobile toggle" href="javascript:void(0);">Налоги</a>
                 <div class="taxes__content-text-mobile">
                   <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
@@ -146,6 +150,7 @@
             <li>
               <div class="payment__registry-mobile">
                 <img src="images/registry-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" alt=""> </div>
                 <a class="payment__registry-mobile toggle" href="javascript:void(0);">Услуги Росреестра</a>
                 <div class="registry__content-text-mobile">
                   <p>В поисковой строке укажите Код платежа, который был отправлен вам

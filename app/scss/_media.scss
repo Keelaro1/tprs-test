@@ -19,9 +19,12 @@
     }
   }
 
-  .footer__inner {
+  .footer {
+    min-height: 375px;
+  }
+  .footer .footer__inner {
     flex-wrap: wrap;
-
+    margin: 0;
     .footer__copy,
     .footer__menu,
     .footer__contacts,
@@ -32,6 +35,7 @@
 
     .footer__copy {
       order: 1;
+      margin-bottom: 10px !important;
     }
 
     .footer__copy-secondary {
@@ -57,6 +61,10 @@
     }
   }
 
+  .payment__inner-title-mobile {
+    display: none;
+  }
+
   .payment__fees-mobile {
     display: none;
   }
@@ -80,11 +88,15 @@
   .registry__content-text-mobile {
     display: none !important;
   }
+
+  .payment__penalties-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .header {
-    max-height: 50px;
+    max-height: 40px;
   }
   .header img {
     margin-left: 20px;
@@ -106,13 +118,16 @@
 
   .header__inner .header__help {
     display: block;
-    min-width: 100%;
+    width: 100%;
   }
   .header__inner .header__help-dropdown {
     box-shadow: none;
-    position: static;
+    position: absolute;
+    right: 0px;
+    transition: 0.5s;
+    display: block;
+    width: 100%;
     margin-top: 0px;
-    display: none;
 
     ul {
       min-width: 100%;
@@ -122,6 +137,16 @@
       margin-left: 20px;
       padding: 7px 0px 5px 16px;
     }
+  }
+
+  .header__inner .mobile-dropdown {
+    transition: 0.5s;
+    display: block;
+    right: 999px;
+  }
+
+  .header__help-link {
+    display: none;
   }
 
   .header__help-dropdown:after {
@@ -139,12 +164,11 @@
     display: block;
     text-align: center;
     border: 2px solid #0777ba;
-    width: 95%;
-    padding: 16px 0;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 12px 8px;
+    padding: 12px 0;
     a {
       border-bottom: none;
+      width: 100%;
     }
   }
 
@@ -180,33 +204,71 @@
   }
   .payment__inner .payment__inner-title {
     font-size: 21px;
+    display: none;
+  }
+
+  .payment__inner-title-mobile {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 18px;
   }
 
   .accordion {
     position: relative;
     min-width: 100%;
     img {
-      width: 35px;
-      margin-right: 18px;
+      width: 31px;
+      margin-right: 10px;
+      margin-left: 3px;
+      margin-bottom: 3px;
     }
+  }
+
+  .accordion__triangle {
+    background-image: url("../images/accordion-triangle-up.png");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 8px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .triangle-open {
+    background-image: url("../images/accordion-triangle-down.png");
   }
 
   .payment__inner .payment__inner-content {
     min-width: 100%;
     text-align: left;
+    
     li:not(:last-child) {
       margin-right: 0;
       font-size: 18px;
       color: #0777ba;
       display: block;
       border-bottom: 1px solid #cedae4;
-      padding-bottom: 12px;
-      padding-top: 12px;
-      padding-left: 20px;
+      padding: 12px 5px 12px 12px;
     }
     li:last-child {
       display: none;
     }
+
+    /*Нажатие регистрируется на целый блок в ущерб border-bottom*/
+    a {
+      width: 80%;
+      overflow: hidden;
+      border-bottom: none;
+    }
+  }
+
+  .debts__content-text_lower {
+    margin-top: -40px;
+  }
+
+  .payment__penalties-desktop {
+    display: none;
   }
 
   .accordion .trafficpolice__penalties-text-mobile,
@@ -274,28 +336,19 @@
     }
     li {
       padding: 0 !important;
-      margin-top: 20px;
-      max-width: 150px;
+      margin-top: 30px;
+      width: 150px;
     }
   }
 
-  .footer__menu {
-    display: none;
-  }
-
-  .footer__contacts {
-    display: none;
-  }
-
-  .footer__copy-secondary-image {
-    display: none;
-  }
-
   .footer {
-    margin-top: 40px !important;
+    margin-top: 50px !important;
+    max-height: 150px;
+    position: relative;
   }
 
   .footer .footer__inner {
+    height: 150px;
     margin: 0;
     font-size: 13px;
     line-height: 18px;
@@ -323,6 +376,14 @@
     text-align: center;
   }
 
+  .footer__menu {
+    display: none;
+  }
+
+  .footer__contacts {
+    display: none;
+  }
+
   .footer__copy-secondary {
     margin: 0 auto;
     min-width: 100%;
@@ -330,5 +391,27 @@
 
   .footer__copy-secondary-text {
     text-align: center;
+    margin: 0px 35px;
+  }
+
+  .footer__copy-secondary-image {
+    display: none;
+  }
+  .footer .share-btn {
+    position: absolute !important;
+    bottom: 14px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 395px) {
+  .payment__inner-content {
+    a {
+      font-size: 14px !important;
+      max-width: 70%;
+    }
+    p, span {
+      font-size: 12px;
+      margin-left: 5px;
+    }
   }
 }

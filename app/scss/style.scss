@@ -31,8 +31,6 @@ body {
   font-size: $primary-font-size;
   overflow: auto;
   height: 100%;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: grayscale !important;
 }
 
 a {
