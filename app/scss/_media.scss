@@ -100,7 +100,8 @@
   }
   .header img {
     margin-left: 20px;
-    width: 220px;
+    max-width: 205px;
+    max-height: 30px;
   }
 
   .header .header__inner {
@@ -362,7 +363,7 @@
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
-    max-height: 20px;
+    height: 20px;
     position: relative;
     img {
       position: absolute;
@@ -391,7 +392,7 @@
 
   .footer__copy-secondary-text {
     text-align: center;
-    margin: 0px 35px;
+    margin: 0 15px;
   }
 
   .footer__copy-secondary-image {
